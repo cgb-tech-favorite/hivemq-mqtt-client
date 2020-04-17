@@ -70,10 +70,12 @@ public class MqttClientConfig implements Mqtt5ClientConfig {
     private @Nullable SslContext currentSslContext;
 
     public MqttClientConfig(
-            final @NotNull MqttVersion mqttVersion, final @NotNull MqttClientIdentifierImpl clientIdentifier,
+            final @NotNull MqttVersion mqttVersion,
+            final @NotNull MqttClientIdentifierImpl clientIdentifier,
             final @NotNull MqttClientTransportConfigImpl transportConfig,
             final @NotNull MqttClientExecutorConfigImpl executorConfig,
-            final @NotNull MqttClientAdvancedConfig advancedConfig, final @NotNull ConnectDefaults connectDefaults,
+            final @NotNull MqttClientAdvancedConfig advancedConfig,
+            final @NotNull ConnectDefaults connectDefaults,
             final @NotNull ImmutableList<MqttClientConnectedListener> connectedListeners,
             final @NotNull ImmutableList<MqttClientDisconnectedListener> disconnectedListeners) {
 
